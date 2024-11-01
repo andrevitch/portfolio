@@ -1,0 +1,264 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 400;
+    /* background: #fdfce8; */
+    background: #fbeba3;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    max-width: 120rem;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    height: 9.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: start;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Fonts  */
+h2,
+p,
+.contact-me {
+    /* color: rgb(33, 37, 41, .8); */
+    color: rgba(27, 27, 26, 0.85);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(33, 37, 41, .9);
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: "Outfit", sans-serif;
+    font-size: 3.2rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.contact-me {
+    text-align: center;
+    display: block;
+    color: rgb(33, 37, 41, .8);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+/* Common  */
+.brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.brand-link {
+    text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.brand {
+    text-align: center;
+    overflow: visible;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.brands a:last-child .brand {
+    margin-bottom: 0;
+}
+
+.site-brands {
+    /* margin-bottom: 0; */
+}
+
+.site-image {
+    width: 100%;
+    height: auto;
+}
+
+.brand-h1 {
+    text-decoration: none;
+}
+
+.brand-link:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+    .brands {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .navbar {
+        margin-bottom: 7.2rem;
+        height: 7.2rem;
+        max-width: calc(100% - 4rem);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+        margin-bottom: .8rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .contact-me {
+        font-size: 2rem;
+        margin-bottom: 5.6rem;
+    }
+
+    .brand-link {
+        margin-bottom: 6.4rem;
+    }
+
+    .brands {
+        margin-bottom: 6.4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        margin-bottom: .8rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .contact-me {
+        font-size: 2rem;
+        margin-bottom: 5.6rem;
+    }
+
+    .navbar {
+        margin-bottom: 4.8rem;
+        max-width: calc(100% - 8rem);
+    }
+
+    .brand-link {
+        margin-bottom: 9.6rem;
+    }
+
+    .brands {
+        margin-bottom: 9.6rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* Common  */
+    .navbar {
+        margin-bottom: 8rem;
+    }
+
+    .brand-link {
+        margin-bottom: 12rem;
+    }
+
+    .brands {
+        margin-bottom: 12rem;
+    }
+
+
+    /* Fonts  */
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 8rem;
+        -webkit-transition: .4s all;
+        -o-transition: .4s all;
+        transition: .4s all;
+        letter-spacing: -1px;
+        margin-bottom: .4rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 2.8rem;
+    }
+
+    .contact-me {
+        font-size: 2rem;
+        margin-bottom: 5.6rem;
+    }
+
+
+    /* Animation */
+    .brand:hover h2 {
+        font-size: 8.8rem;
+        /* color: rgb(33, 37, 41, .85); */
+        /* color: rgb(20, 20, 19, .95); */
+        color: rgba(27, 27, 26, 0.95);
+    }
+}
