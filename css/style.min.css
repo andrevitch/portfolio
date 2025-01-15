@@ -1,0 +1,386 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #FFFFFC;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    /* max-width: 179.2rem; */
+    width: 100%;
+    padding: 0;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar-fluid {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0px 2px 0px 0px rgba(122, 122, 121, 0.18);
+    background-color: #FFFFFC;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 179.2rem; */
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+
+/* Fonts  */
+.logo,
+h1,
+h2,
+p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo,
+h1 {
+    font-weight: 700;
+}
+
+h2,
+p {
+    font-weight: 500;
+}
+
+footer h2 {
+    font-weight: 700;
+}
+
+
+/* Colors  */
+.logo,
+h1,
+footer h2 {
+    color: rgb(66, 65, 60);
+}
+
+h2 {
+    color: rgb(66, 65, 60, .9);
+}
+
+p {
+    color: rgb(66, 65, 60, .8);
+}
+
+/* Common  */
+.socials {
+    max-height: 2.4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    /* box-shadow: 0px 4px 10px 0px rgba(66, 65, 60, 0.12); */
+    /* box-shadow: 0px 4px 10px 0px rgba(66, 65, 60, 0.33); */
+    /* box-shadow: 0px 4px 10px 0px rgba(66, 65, 60, 0.2); */
+
+    transition: all .3s ease-out;
+}
+
+.card a {
+    text-decoration: none;
+    visibility: none;
+    height: -11px;
+}
+
+.card a img {
+    /* max-width: 56rem; */
+    width: 100%;
+    height: auto;
+    /* height: auto; */
+}
+
+footer {
+    border-top: 2px solid rgba(122, 122, 121, 0.18);
+}
+
+
+
+
+
+/* Mobile  */
+@media only screen and (max-width: 600px) {
+
+    /* Common  */
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .navbar {
+        padding: 2.4rem 2rem;
+    }
+
+    header {
+        margin-bottom: 7.2rem;
+    }
+
+
+    /* Fonts  */
+    .logo {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        max-width: 28rem;
+        margin-bottom: 1.6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        max-width: 32rem;
+    }
+
+
+    /* Hero  */
+    .hero-container {
+        margin-top: 13.6rem;
+        margin-bottom: 6.4rem;
+    }
+
+    /* Cards  */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 2.4rem;
+        grid-row-gap: 2.4rem;
+        margin-bottom: 8rem;
+    }
+
+
+    /* Footer  */
+    footer {
+        padding: 4.8rem 2rem;
+    }
+
+    footer h2 {
+        margin-bottom: 2.4rem;
+    }
+
+    footer p {
+        line-height: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+/* Tablet  */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+
+    /* Common  */
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .navbar {
+        padding: 2.4rem 4rem;
+    }
+
+    header {
+        margin-bottom: 7.2rem;
+    }
+
+
+    /* Fonts  */
+    .logo {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+
+    h1 {
+        font-size: 5.6rem;
+        line-height: 6rem;
+        max-width: 57.8rem;
+        margin-bottom: 3.2rem;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        max-width: 47.2rem;
+    }
+
+
+    /* Hero  */
+    .hero-container {
+        margin-top: 16rem;
+        margin-bottom: 8.8rem;
+    }
+
+    /* Cards  */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2.4rem;
+        grid-row-gap: 2.4rem;
+        margin-bottom: 9.6rem;
+    }
+
+
+    /* Footer  */
+    footer {
+        padding: 4.8rem 4rem;
+    }
+
+    footer h2 {
+        margin-bottom: 3.2rem;
+    }
+
+    footer p {
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Desktop  */
+@media only screen and (min-width: 1024px) {
+
+    /* Common  */
+    .container {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
+
+    .navbar {
+        padding: 3.2rem 6.4rem;
+    }
+
+    header {
+        margin-bottom: 8.8rem;
+    }
+
+
+    /* Fonts  */
+    .logo {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 3.2rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+        line-height: 8.4rem;
+        max-width: 80rem;
+        margin-bottom: 4rem;
+    }
+
+    p {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        max-width: 57rem;
+    }
+
+
+    /* Hero  */
+    .hero-container {
+        margin-top: 20.8rem;
+        margin-bottom: 10rem;
+    }
+
+    /* Cards  */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 3.2rem;
+        grid-row-gap: 3.2rem;
+        margin-bottom: 16rem;
+        margin-top: 2rem;
+    }
+
+
+    /* Footer  */
+    footer {
+        padding: 5.6rem 6.4rem;
+    }
+
+    footer h2 {
+        margin-bottom: 3.2rem;
+    }
+
+    footer p {
+        line-height: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+
+    /* Animation */
+    /* .brand:hover h2 {
+        font-size: 8.8rem;
+        color: rgb(66, 65, 60, 1);
+        margin-bottom: 2.4rem;
+    } */
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+
+}
