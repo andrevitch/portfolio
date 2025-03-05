@@ -430,8 +430,11 @@
               <h2>Contact</h2>
             </div>
 
+
+            <!-- action="send_mail.php" method="post"  -->
             <div class="contact-right">
-              <form id="contactForm" action="send_mail.php" method="post" onsubmit="return validateForm()">
+              <form id="contactForm" action="/.netlify/functions/sendMail" method="post"
+                onsubmit="return validateForm()">
 
                 <div class="name">
                   <h3>Message Me</h3>
