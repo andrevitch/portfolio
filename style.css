@@ -807,7 +807,8 @@ textarea:active {
         padding: 4.8rem 0;
     }
 
-    .contact-left h2 {
+    .contact-left h2,
+    .contact-right h4 {
         padding-left: 2rem;
     }
 
@@ -1306,8 +1307,9 @@ textarea:active {
         padding: 4.8rem 0;
     }
 
-    .contact-left h2 {
-        padding-left: 2rem;
+    .contact-left h2,
+    .contact-right h4 {
+        padding-left: 4rem;
     }
 
     .contact-grid {
@@ -1777,9 +1779,16 @@ textarea:active {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
     }
 
-    #contactForm {
+    .contact-left h2 {
+        margin-bottom: 0;
+    }
+
+    /* #contactForm {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1843,7 +1852,7 @@ textarea:active {
 
     #contactForm .email_phone div input {
         width: 24rem;
-    }
+    } */
 
 
     /* Footer  */
@@ -2017,6 +2026,10 @@ textarea:active {
 
     /* .work-container h2, .about-container h2 */
     h2 {
+        margin-bottom: 3.2rem;
+    }
+
+    .contact-left h2 {
         margin-bottom: 3.2rem;
     }
 
