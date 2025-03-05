@@ -433,9 +433,9 @@
 
             <!-- action="send_mail.php" method="post" onsubmit="return validateForm()" -->
             <div class="contact-right">
-              <form id="contactForm" action="/.netlify/functions/sendMail" method="post">
+              <form id="contactForm" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
 
-                <div class="name">
+                <div class=" name">
                   <h3>Message Me</h3>
                   <label for="name">Name (required):</label>
                   <input type="text" id="name" name="name" required>
